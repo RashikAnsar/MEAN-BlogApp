@@ -19,7 +19,7 @@ router.post('/signup', (req,res,next) => {
       });
     }).catch(err => {
       res.status(500).json({
-        error: err
+        message: 'Email already exists'
       });
     });
   });
@@ -31,7 +31,7 @@ router.post('/login', (req,res,next) => {
     .then(user => {
       if (!user) {
         return res.status(401).json({
-          message: 'Authentication failed'
+          message: 'Authentication failed! Email doesn\'t exist'
         });
       }
       fetchedUser = user;
