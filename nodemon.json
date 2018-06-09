@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_CLOUD_PWD": "IQ9Qmlcu5wjD81A4",
+    "JWT_KEY": "secret_this_should_be_longer"
+  }
+}
